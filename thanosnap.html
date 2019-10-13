@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{ margin: 0; padding: 0; }
+		div{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #2c3e50;
+		}
+
+		img{ transition:all 2s; }
+
+		div:hover img{ 
+			transform: rotate(45deg) translateY(-200px);
+			opacity: 0;
+			filter: blur(20px);
+		 }
+
+		div img:nth-child(1){
+			transition-delay: 0;
+		} 
+
+		div img:nth-child(2){
+			transition-delay: 0.4s;
+		} 
+
+		div img:nth-child(3){
+			transition-delay: 0.8s;
+		} 
+
+		div img:nth-child(4){
+			transition-delay: 1.2s;
+		} 
+
+		div img:nth-child(5){
+			transition-delay: 1.6s;
+		} 
+
+
+
+	</style>
+</head>
+<body>
+
+<div>
+	<img src="https://joeschmoe.io/api/v1/kuchbhi">
+	<img src="https://joeschmoe.io/api/v1/vinod">
+	<img src="https://joeschmoe.io/api/v1/bahadur">
+	<img src="https://joeschmoe.io/api/v1/thapa">
+	<img src="https://joeschmoe.io/api/v1/thapatechnical">
+</div>
+
+</body>
+</html>

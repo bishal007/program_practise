@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+	<style>
+		*{ margin: 0; padding:0; font-family: 'Josefin Sans', sans-serif; }
+
+		nav{ height: 100px;
+		background-color: #81ecec;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		 }
+
+		 .logo{
+		 	width: 40%;
+		 	color: #0984e3;
+		 	/*background: #fab1a0;*/
+		 	padding-left: 55px;
+		 }
+
+		 .logo h1{ text-transform: capitalize; 
+		 	text-shadow: 2px 2px 2px #dfe6e9;
+		 }
+
+		 .menu{ 
+		 width: 60%; 
+		 /*background-color: #6c5ce7;*/
+		 display: flex;
+		 justify-content: space-around;
+		 align-items: center;
+		}
+
+		.menu a{ 
+			text-decoration: none;
+			color: #2d3436;
+			text-transform: uppercase;
+			font-weight: bold;
+			position: relative;
+		 }
+
+		 .menu a:before{
+		 	content: "";
+		 	position: absolute;
+		 	left: 0;
+		 	top: 100%;
+		 	width: 0%;
+		 	height: 3px;
+		 	background-color: #000;
+		 	transition: all 0.5s linear;
+		 }
+
+		  .menu a:after{
+		 	content: "";
+		 	position: absolute;
+		 	right: 0;
+		 	top: -40%;
+		 	width: 0%;
+		 	height: 3px;
+		 	background-color: #000;
+		 	transition: all 0.5s linear;
+		 }
+
+		 .menu a:hover:before{
+		 	width: 100%;
+		 	background-color: #6c5ce7;
+		 }
+
+		 .menu a:hover:after{
+		 	width: 100%;
+		 	background-color: #6c5ce7;
+		 }
+
+	</style>
+</head>
+<body>
+
+
+<nav>
+	<div class="logo">
+		<h1>thapaTechnical</h1>
+	</div>
+
+	<div class="menu">
+		<a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_blank">Home</a>
+		<a href="#">services</a>
+		<a href="#">gallery</a>
+		<a href="#">about</a>
+		<a href="#">contact</a>
+	</div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<style>
+		*{ margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif; }
+		.btnhover{
+			height: 100vh;
+			background-color: black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		a{ padding: 40px 100px;
+			border: 3px solid white;
+			color: white;
+			text-decoration: none;
+			font-size: 3.5rem;
+			position: relative;
+			overflow: hidden;
+			 }
+
+		a:before{
+			content: "Awesome";
+			position: absolute;
+			left: 0; top: 0;
+			width: 100%; height: 100%;
+			background-color: red;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transform: translateY(-50%);
+			transition: all 0.5s linear; 
+		}
+
+		a:hover:before{
+			transform: translateY(0);
+		}
+	</style>
+</head>
+<body>
+
+<div class="btnhover">
+	<a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA?view_as=subscriber">
+		Hover Me
+	</a>
+</div>
+
+</body>
+</html>
+
+
+<!-- 
+CSS Button Hover Overlay Animation Effect 
+
+welcome, we will see CSS Button Hover Overlay Animation Effect. -->

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<style>
+		*{ margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif;}
+
+		nav{
+			height: 100px;
+			background: #81ecec;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			box-shadow: 2px 2px 3px 2px #b2bec3;
+		}
+
+		.logo{
+			width: 40%;
+			/*background: yellow;*/
+			padding-left: 55px;
+			color: #6c5ce7;
+			text-shadow: 2px 2px 2px #00cec9;
+		}
+
+		.menu{ width: 60%;
+	/*	background: green;*/
+		display: flex;
+		justify-content: space-around;
+		align-items: center; }
+
+		.menu a {
+			 text-decoration: none;
+			 color: #2d3436;
+			 text-transform: uppercase;
+			 font-weight: bold;
+			 position: relative;
+		}
+
+		.menu a:before{
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 0%;
+			height: 2px;
+			background: black;
+			transition: all 0.5s linear;
+		}
+
+		.menu a:hover:before{
+			width: 100%;
+			background-color: #0984e3;
+		}
+
+	</style>
+</head>
+<body>
+
+<nav>
+	<div class="logo">
+		<h1>ThapaTechnical</h1>
+	</div>
+
+	<div class="menu">
+		<a href="#">Home</a>
+		<a href="#">services</a>
+		<a href="#">gallery</a>
+		<a href="#">about</a>
+		<a href="#">contact</a>
+	</div>
+</nav>
+
+</body>
+</html>

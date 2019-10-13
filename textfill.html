@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+	<style>
+		*{ margin: 0; padding: 0; font-family: 'Manjari', sans-serif; }
+
+		div{ height: 100vh;
+		display: flex; justify-content: center;
+		align-items: center;
+		background-color: #74b9ff; }
+
+		h1{ font-size: 20rem;
+		text-transform: uppercase;
+		color: white; position:relative; }
+
+		h1:before{
+			content: "thapa";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0;
+			color: #ff7675;
+			overflow: hidden;
+			transition: all 2s linear;
+		}
+
+		h1:hover:before{
+			width: 100%;
+			text-shadow: 5px 5px 2px #2d3436;
+		}
+
+	</style>
+</head>
+<body>
+
+<div>
+	<h1>thapa</h1>
+</div>
+
+</body>
+</html>
